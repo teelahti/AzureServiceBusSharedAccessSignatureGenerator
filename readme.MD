@@ -1,4 +1,4 @@
-Create Azure service bus shared access token via command line
+Create Azure service bus shared access signature via command line
 =============================================================
 
 [Shared access signatures](https://msdn.microsoft.com/en-us/library/azure/dn170477.aspx) 
