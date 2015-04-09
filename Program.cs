@@ -33,7 +33,7 @@ namespace AzureServiceBusSharedAccessSignatureGenerator
         {
             var exe = Path.GetFileName(Assembly.GetExecutingAssembly().Location);
             Console.WriteLine("Usage: {0} resourceUri keyName primaryKey", exe);
-            Console.WriteLine("e.g. {0} http://foo-ns.servicebus.windows.net/foo WriteEvents cia1mGdvhkD/XDXZD+vChY+fqVsGJr7N21fwHuABbMs=");
+            Console.WriteLine("e.g. {0} http://foo-ns.servicebus.windows.net/foo WriteEvents cia1mGdvhkD/XDXZD+vChY+fqVsGJr7N21fwHuABbMs=", exe);
         }
     }
 }
