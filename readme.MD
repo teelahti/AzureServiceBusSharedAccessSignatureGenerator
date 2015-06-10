@@ -5,7 +5,11 @@ Create Azure service bus shared access signature via command line
 are required when using the [Azure Service Bus REST API](https://msdn.microsoft.com/en-us/library/azure/hh780717.aspx). 
 There is no easy tool to create these tokens, but there is a 
 .NET SDK [API method GetSharedAccessSignature](https://msdn.microsoft.com/en-us/library/microsoft.servicebus.sharedaccesssignaturetokenprovider.getsharedaccesssignature.aspx). This project is just a simple command line 
-wrapper for that method.
+wrapper for that method. This [ScriptCS](http://scriptcs.net/) script is a wrapper for that SDK.
 
-This same could easily be done with [ScriptCS](http://scriptcs.net), 
-as it supports [installing NuGet packages](https://github.com/scriptcs/scriptcs/wiki/Package-installation).
+To see helps run 
+
+    $ scriptcs sasgenerator
+	Usage: scriptcs sasgenerator -- resourceUri keyName primaryKey                                
+    e.g. scriptcs sasgenerator -- http://foo-ns.servicebus.windows.net/foo WriteEvents cia1mGdvhkD/XDXZD+vChY+fqVsGJr7N21fwHuABbMs=
+	                                              
